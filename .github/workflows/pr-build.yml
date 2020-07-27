@@ -115,8 +115,8 @@ jobs:
       steps:
         - name: "Checkout"
           uses: actions/checkout@v2
-          with:
-            submodules: recursive
+          #with:
+          #  submodules: recursive
         - name: 'Fetch Git Tags'
           if: success()
           run: |
