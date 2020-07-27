@@ -170,7 +170,7 @@ jobs:
             libcurl4-openssl-dev \
             libegl1-mesa-dev \
             libpng-dev \
-            qtbase5-private-dev \
+         #  qtbase5-private-dev \
          #  libxxf86vm-dev \
          #  x11proto-xinerama-dev
         - name: "Build Dolphin"
