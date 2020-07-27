@@ -139,7 +139,10 @@ jobs:
             qt514-meta-minimal \
             libxrandr-dev \
             x11proto-xinerama-dev \
-            libxinerama-dev
+            libxinerama-dev \
+            libxi-dev \
+            libpulse-dev \
+            libgl1-mesa-dev \
          #  cmake \
          #  pkg-config \
          #  git \
@@ -154,7 +157,6 @@ jobs:
          #  liblzo2-dev \
          #  libminiupnpc-dev \
          #  libopenal-dev \
-         #  libpulse-dev \
          #  libreadline-dev \
          #  libsfml-dev \
          #  libsoil-dev \
