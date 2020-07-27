@@ -136,14 +136,17 @@ jobs:
             sudo apt install \
             gcc-6 \
             g++-6 \
-            qt514-meta-minimal
-         #   cmake \
-         #   pkg-config \
-         #   git \
-         #   wget \
-         #   libao-dev \
-         #   libasound2-dev \
-         #   libavcodec-dev \
+            qt514-meta-minimal \
+            libxrandr-dev \
+            x11proto-xinerama-dev \
+            libxinerama-dev
+         #  cmake \
+         #  pkg-config \
+         #  git \
+         #  wget \
+         #  libao-dev \
+         #  libasound2-dev \
+         #  libavcodec-dev \
          #  libavformat-dev \
          #  libbluetooth-dev \
          #  libenet-dev \
@@ -161,7 +164,6 @@ jobs:
          #  libwxbase3.0-dev \
          #  libwxgtk3.0-dev \
          #  libxext-dev \
-         #  libxrandr-dev \
          #  portaudio19-dev \
          #  zlib1g-dev \
          #  libudev-dev \
@@ -172,7 +174,6 @@ jobs:
          #  libpng-dev \
          #  qtbase5-private-dev \
          #  libxxf86vm-dev \
-         #  x11proto-xinerama-dev
         - name: "Build Dolphin"
           if: success()
           working-directory: ${{ github.workspace }}
