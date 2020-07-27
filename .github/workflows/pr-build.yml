@@ -4,6 +4,7 @@ on:
   push:
     branches:
         - master
+        - linux-appimage
     paths-ignore:
         - "**.md"
         - "**.ini"
