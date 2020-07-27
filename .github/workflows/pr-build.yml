@@ -169,7 +169,7 @@ jobs:
             libmbedtls-dev \
             libcurl4-openssl-dev \
             libegl1-mesa-dev \
-            libpng-dev \
+         #  libpng-dev \
          #  qtbase5-private-dev \
          #  libxxf86vm-dev \
          #  x11proto-xinerama-dev
