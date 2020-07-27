@@ -177,12 +177,12 @@ jobs:
           if: success()
           working-directory: ${{ github.workspace }}
           run: |
-            ./build-linux.sh
+           bash ./build-linux.sh
         - name: "Build AppImage"
           if: success()
           working-directory: ${{ github.workspace }}
           run: |
-            ./build-appimage.sh
+            bash ./build-appimage.sh
         - name: "Package Netplay"
           if: success()
           working-directory: ${{ github.workspace }}
