@@ -1,7 +1,7 @@
 #!/bin/bash -e
 # build-linux.sh
 
-CMAKE_FLAGS='-DLINUX_LOCAL_DEV=true -DCMAKE_PREFIX_PATH=/opt/qt514'
+CMAKE_FLAGS='-DLINUX_LOCAL_DEV=true -DUSE_STATIC_LIBPNG=ON -DCMAKE_PREFIX_PATH=/opt/qt514'
 
 # Move into the build directory, run CMake, and compile the project
 mkdir -p build
