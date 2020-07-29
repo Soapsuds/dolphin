@@ -6,8 +6,8 @@ CMAKE_FLAGS='-DLINUX_LOCAL_DEV=true -DUSE_STATIC_LIBPNG=ON -DCMAKE_PREFIX_PATH=/
 # Move into the build directory, run CMake, and compile the project
 mkdir -p build
 pushd build
-export CXX=g++-6
-export CC=gcc-6
+export CXX=g++-9
+export CC=gcc-9
 cmake ${CMAKE_FLAGS} ../
 make -j$(nproc)
 popd
