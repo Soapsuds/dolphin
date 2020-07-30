@@ -145,15 +145,8 @@ jobs:
             libgl1-mesa-dev \
             libudev-dev \
             libevdev-dev \
-         #  cmake \
-         #  pkg-config \
-         #  git \
-         #  wget \
-         #  libao-dev \
-         #  libasound2-dev \
-         #  libavcodec-dev \
-         #  libavformat-dev \
-         #  libbluetooth-dev \
+            libasound2-dev \
+            libbluetooth-dev \
          #  libenet-dev \
          #  libgtk2.0-dev \
          #  liblzo2-dev \
