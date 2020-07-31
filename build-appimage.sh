@@ -33,4 +33,4 @@ mkdir -p AppDir
 
 # Add the Sys dir to the AppDir for packaging
 cp -r Data/Sys ${APPDIR_BIN}
-./Tools/linuxdeployqt ./AppDir/usr/share/applications/dolphin-emu.desktop -qmake=/opt/qt514/bin/qmake
+./Tools/linuxdeployqt ./AppDir/usr/share/applications/dolphin-emu.desktop -qmake=/opt/qt514/bin/qmake -appimage
