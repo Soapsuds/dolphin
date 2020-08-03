@@ -45,6 +45,7 @@ jobs:
             libevdev-dev \
             libasound2-dev \
             libbluetooth-dev \
+            libegl1-mesa-dev \
         - name: "Build Dolphin"
           if: success()
           working-directory: ${{ github.workspace }}
