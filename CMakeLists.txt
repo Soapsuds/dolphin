@@ -34,6 +34,9 @@ option(ENABLE_LLVM "Enables LLVM support, for disassembly" ON)
 option(ENABLE_TESTS "Enables building the unit tests" ON)
 option(USE_DISCORD_PRESENCE "Enables Discord Rich Presence, show the current game on Discord" ON)
 option(USE_STATIC_LIBPNG "Do not use the system's PNG library" OFF )
+option(USE_STATIC_LIBZLIB "Do not use the system's ZLIB library" OFF )
+
+
 
 # Maintainers: if you consider blanket disabling this for your users, please
 # consider the following points:
@@ -559,12 +562,16 @@ if(NOT XXHASH_FOUND)
   add_subdirectory(Externals/xxhash)
 endif()
 
-find_package(ZLIB)
-if(ZLIB_FOUND)
-  message(STATUS "Using shared zlib")
-else()
+if (USE_STATIC_LIBPNG)
   message(STATUS "Shared zlib not found, falling back to the static library")
   add_subdirectory(Externals/zlib)
+else()
+  find_package(ZLIB)
+  if(ZLIB_FOUND)
+    message(STATUS "Using shared zlib")
+  else()
+    message(STATUS "Shared zlib not found, falling back to the static library")
+    add_subdirectory(Externals/zlib)
 endif()
 
 add_subdirectory(Externals/minizip)
