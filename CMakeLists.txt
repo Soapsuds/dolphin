@@ -572,6 +572,7 @@ else()
   else()
     message(STATUS "Shared zlib not found, falling back to the static library")
     add_subdirectory(Externals/zlib)
+  endif()
 endif()
 
 add_subdirectory(Externals/minizip)
